@@ -1,0 +1,25 @@
+{
+  "name": "04-Node-toDoApp",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GonzaloRocha-98/04-Node-toDoApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GonzaloRocha-98/04-Node-toDoApp/issues"
+  },
+  "homepage": "https://github.com/GonzaloRocha-98/04-Node-toDoApp#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "inquirer": "^8.0.0",
+    "uuid": "^8.3.2"
+  }
+}
