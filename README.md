@@ -5,3 +5,4 @@
 * Tenemos un archivo data.json que utilizaremos como base de datos dentro de la carpeta database
 * Utilizamos TaksRepository como repositorio del diseño
 * Probamos el nuevo branch
+* Ahora probaremos el conflicto
