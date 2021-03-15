@@ -1,5 +1,4 @@
-import { v4 as uuidv4 } from 'uuid';
-
+const { v4: uuidv4 } = require('uuid');
 
 class Task{
 
@@ -14,7 +13,7 @@ class Task{
         this.title = title;
         this.done=false;
         this.created = new Date();
-    }
+    };
 
-}
+};
 module.exports = Task;
