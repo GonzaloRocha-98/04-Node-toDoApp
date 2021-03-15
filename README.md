@@ -6,5 +6,6 @@
 * Utilizamos TaksRepository como repositorio del diseño
 * Probamos el nuevo branch
 * Ahora probaremos el conflicto
+* Segunda prueba del conflicto (main)
 * Segunda prueba del conflicto
-* Tercer conflicto
+* Tercera prueba conflicto triple
