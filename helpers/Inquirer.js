@@ -17,6 +17,14 @@ const inquirerMenu = async() =>{
                     value: 2,
                     name: `${'2-'.blue} Show Tasks`
                 },
+                {   value: 3,
+                    name:`${'3-'.blue} Complete Task`
+
+                },
+                {
+                    value:4,
+                    name:`${'4-'.blue} Delete Task`
+                },
                 {
                     value: 'x',
                     name: `${'x- '.blue} Exit`,
@@ -46,7 +54,28 @@ const inquirerInput = async(message)=>{
     return description
 };
 
+/**
+ * 
+ * @param {Array} arrayTasks 
+ * @param {String} message 
+ * @returns 
+ */
+const inquirerSubMenuChoices = async(arrayTasks, message ) =>{
+    let choices = arrayTasks.map( (task,i) => ({value: task.id,name: `${i+1}) ${task.title.yellow}`}) )
+    const subMenu = [
+        {
+            type: 'list',
+            name: 'choice',
+            message,
+            choices
+        }
+    ];
+    const {choice} = await inquirer.prompt(subMenu);
+    return choice
+}
+
 module.exports = {
     inquirerMenu,
-    inquirerInput
+    inquirerInput,
+    inquirerSubMenuChoices
 }

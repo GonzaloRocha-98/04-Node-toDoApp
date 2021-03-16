@@ -29,12 +29,14 @@ class TaskRepository{
         saveData(this._tasks);
     };
 
-    deleteTask(){
-
+    deleteTask(id){
+        this._tasks = this._tasks.filter(item => item.id !== id);
+        saveData(this._tasks);
     };
 
-    completeTask(){
-
+    completeTask(id){
+        this._tasks.map(item => {if(item.id === id){item.done=true}} );
+        saveData(this._tasks);
     };
 };
 
